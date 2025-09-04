@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Play Console App Review - QR Codes</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        line-height: 1.6;
+      }
+
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #1976d2;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+        font-style: italic;
+      }
+
+      .qr-section {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .qr-container {
+        text-align: center;
+        flex: 1;
+        min-width: 250px;
+        padding: 20px;
+        border: 2px dashed #e0e0e0;
+        border-radius: 8px;
+        background-color: #fafafa;
+      }
+
+      .qr-container h2 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.3em;
+      }
+
+      .qr-container img {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+      }
+
+      .qr-container img:hover {
+        transform: scale(1.05);
+      }
+
+      .device-info {
+        margin-top: 10px;
+        color: #555;
+        font-size: 0.9em;
+      }
+
+      .instructions {
+        background-color: #e3f2fd;
+        border-left: 4px solid #1976d2;
+        padding: 15px;
+        margin-top: 30px;
+        border-radius: 0 5px 5px 0;
+      }
+
+      .instructions h3 {
+        color: #1976d2;
+        margin-top: 0;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #888;
+        font-size: 0.85em;
+      }
+
+      @media (max-width: 600px) {
+        .qr-section {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .qr-container {
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Google Play Console App Review</h1>
+      <p class="subtitle">QR Codes for App Testing & Verification</p>
+
+      <div class="instructions">
+        <h3>📱 Instructions for Reviewers</h3>
+        <p>
+          Please scan the appropriate QR code based on your device type to
+          access the app for review.
+        </p>
+      </div>
+
+      <div class="qr-section">
+        <div class="qr-container">
+          <h2>📱 Smartphone Version</h2>
+          <img
+            src="smartphone-black.png"
+            alt="QR Code for Smartphone App Version - Google Play Console Review"
+            width="200"
+            height="200"
+          />
+          <div class="device-info">
+            <strong>For:</strong> Phone devices<br />
+            <strong>Format:</strong> Mobile optimized
+          </div>
+        </div>
+
+        <div class="qr-container">
+          <h2>📱 Tablet Version</h2>
+          <img
+            src="tablet-black.png"
+            alt="QR Code for Tablet App Version - Google Play Console Review"
+            width="200"
+            height="200"
+          />
+          <div class="device-info">
+            <strong>For:</strong> Tablet devices<br />
+            <strong>Format:</strong> Tablet optimized
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Generated for Google Play Console App Review Process</p>
+      </div>
+    </div>
+  </body>
+</html>
